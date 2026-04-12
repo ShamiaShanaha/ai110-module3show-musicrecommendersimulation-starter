@@ -71,7 +71,7 @@ def load_songs(csv_path: str) -> List[Dict]:
 
 def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
     """Score one song against the user profile (max 6.0 pts) and return (score, reasons)."""
-    # new code
+  
     score = 0.0
     reasons = []
 
