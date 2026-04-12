@@ -87,11 +87,11 @@ def main() -> None:
                 # satisfy both halves — the scorer gets pulled in two directions.
                 "favorite_genre":     "blues",
                 "favorite_mood":      "sad",
-                "target_energy":      0.92,   # blues songs are low energy — direct conflict
-                "target_acousticness":0.05,   # blues is acoustic   — direct conflict
-                "target_tempo_bpm":   160,    # sad songs are slow   — direct conflict
+                "target_energy":      0.92,   # blues songs are low energy which is a  direct conflict
+                "target_acousticness":0.05,   # blues is acoustic which is a direct conflict
+                "target_tempo_bpm":   160,    # sad songs are slow which is a direct conflict
                 "target_valence":     0.20,   # consistent with sad
-                "target_danceability":0.90,   # sad songs rarely danceable — conflict
+                "target_danceability":0.90,   # sad songs rarely danceable which is a conflict
             },
         ),
         (
