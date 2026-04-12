@@ -127,7 +127,7 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
 def recommend_songs(user_prefs: Dict, songs: List[Dict], k: int = 5) -> List[Tuple[Dict, float, str]]:
     """Score every song, sort highest first, and return the top k as (song, score, explanation) tuples."""
 
-    # Step 1 — Score every song using a list comprehension.
+    # Step 1 is to score every song using a list comprehension.
     # The nested `for score, reasons in [score_song(...)]` unpacks the
     # function's return tuple directly inside the comprehension.
     scored = [
@@ -136,6 +136,6 @@ def recommend_songs(user_prefs: Dict, songs: List[Dict], k: int = 5) -> List[Tup
         for score, reasons in [score_song(user_prefs, song)]
     ]
 
-    # Step 2 — Sort and slice in one chained expression.
+    # Step 2 is to  sort and slice in one chained expression.
     # sorted() returns a new list (no mutation). [:k] keeps only the top k.
     return sorted(scored, key=lambda entry: entry[1], reverse=True)[:k]
