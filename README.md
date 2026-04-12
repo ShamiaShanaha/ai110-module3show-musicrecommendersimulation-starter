@@ -253,3 +253,5 @@ A few sentences about what you learned:
 ```
 ## CLI Verification 
 ![CLI Verification](CLI_Verification1.png)
+![CLI Verification](CLI_Verification2.png)
+![CLI Verification](CLI_Verification3.png)
