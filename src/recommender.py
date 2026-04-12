@@ -126,7 +126,6 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
 
 def recommend_songs(user_prefs: Dict, songs: List[Dict], k: int = 5) -> List[Tuple[Dict, float, str]]:
     """Score every song, sort highest first, and return the top k as (song, score, explanation) tuples."""
-    # new code 3
 
     # Step 1 — Score every song using a list comprehension.
     # The nested `for score, reasons in [score_song(...)]` unpacks the
