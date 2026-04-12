@@ -99,7 +99,7 @@ def main() -> None:
             {
                 # 'k-pop' does not exist in songs.csv, so genre_score is always
                 # 0.0 for every song. The entire ranking falls back to numeric
-                # proximity alone — genre weight is completely wasted.
+                # proximity alone meaning genre weight is completely wasted.
                 "favorite_genre":     "k-pop",
                 "favorite_mood":      "euphoric",
                 "target_energy":      0.88,
